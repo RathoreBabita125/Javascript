@@ -13,6 +13,8 @@ let name;
 
 //3. var variable: var variable are the variables that can be changed after intialization
 
+    // ******prefer don't use var variable because of issue in block and function scope   ***********
+
     /*the var keyword is used to declare variables that are function-scoped or globally-scoped,
      depending on where they are declared. Variables declared with var are hoisted to the top 
      of their containing function or script, which means they can be used before they are declared
