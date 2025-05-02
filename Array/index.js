@@ -54,9 +54,56 @@ const myArray=[10,20,30,40,"John","Mike",true,null]
    It overwrites the original array. 
 */
 
-console.log(myArray);
-console.log(myArray.splice(1,2));
-console.log(myArray);
+// console.log(myArray);
+// console.log(myArray.splice(1,2));
+// console.log(myArray);
+
+
+
+/*********************Array**********/
+const vampireTeam1=["Elena","Damon","Stefen","Jeremy"]
+const vampireTeam2=["Caroline","Klaus","Rebekah","Eliajah"]
+
+// vampireTeam1.push(vampireTeam2);
+// console.log(vampireTeam1);  // it will array into array
+
+// But we want both array merged, then we will use concat and store in new array
+// const vampireTeam=vampireTeam1.concat(vampireTeam2)
+// console.log(vampireTeam);
+
+/**********Another Way************/
+const vampireTeam=[...vampireTeam1,...vampireTeam2]
+console.log(vampireTeam);
+
+// when we want all arrays element store in single array, then we use flat 
+// (flat takes an argument to tell depth )  
+// Creates a new array with the sub-array elements concatenated:
+
+const NumArray=[1,2,3,[4,5,6],7,8,[9,10,[11,12,13,14],15]]
+const singleArr=NumArray.flat(Infinity)
+console.log(singleArr);
+
+
+// Other methods of array
+
+console.log(Array.from("Caroline"));
+console.log(Array.isArray("Caroline"));
+console.log(Array.of("Caroline"));
+console.log(Array.from({name:"Caroline"}));  //??????????????
+
+
+
+const user1="Mike"
+const user2="Harvey"
+const user3="George"
+console.log(Array.of(user1,user2,user3));
+
+
+
+
+
+
+
 
 
 
