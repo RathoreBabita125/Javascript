@@ -129,25 +129,25 @@ const employeesDetail={
 
 //+++++++++++++++++++Arrow Function+++++++++++++
 
-/************This works in object but does not work in function******** */
+/************this keywords works in object but does not work in function******** */
 // function sleep(){
 //     let routine="workout"
 //     console.log(this.routine);   
 //     // console.log(this);   
 // }
-// sleep()
+// sleep()   //undefine
 
 // const sleep=function(){
 //     let routine="workout"
 //     console.log(this.routine);   
 // }
-// sleep()
+// sleep()  //undefine
 
 const sleep=()=>{
     let routine="workout"
     console.log(this.routine);   
 }
-sleep()
+sleep()  //undefine
 
 
 
