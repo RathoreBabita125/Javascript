@@ -64,7 +64,7 @@ function findDetails(checkUser){
 
 
 const arr=[100,200,300,400,500]
-console.log(arr.length);
+// console.log(arr.length);
 
 
 
@@ -78,7 +78,52 @@ function checkArray(tempArray, idx, target){
     return false;
 }
 
-console.log(checkArray(arr,0,400));
+// console.log(checkArray(arr,0,400));
+
+/*************IIFE (Immediately Invoke Function Expression) */
+/*Global scope ke pollution se problem hoti hai kai baar to us global scope variable ke 
+  pollution ko htaane ke liye IIFE ka use krte hai*/
+
+
+// function greeting1(){
+//     console.log("Welcome! here-1");
+// }
+// greeting1()
+
+
+/**************IIFE*******************/
+
+// (function greeting1(){
+//     console.log("Welcome! here-1");
+// })()           // will print console
+
+
+// (()=>{
+//     console.log("Welcome! here-1");
+// })()           // will give an error
+
+
+(function greeting1(){
+    console.log("Welcome! here-1");
+})();    // we have to give semicolon
+
+
+(()=>{
+    console.log("Welcome! here-2");
+})();
+
+/******If we right more than one IIFE function we need to give semicolon 
+       at last of function call ***************************************/
+// we can also pass argument in iife function
+
+((name)=>{
+    console.log(`${name}, Welcome! here-2`);
+})("John")  
+
+
+
+
+
 
 
  
