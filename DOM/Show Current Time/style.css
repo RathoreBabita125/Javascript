@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0;
+}
+body{
+    color: #fff;
+    background-color: #212121;
+}
+.container{
+    width: 50vw;
+    height: 50vh;
+    border: 2px solid black;
+    margin: 100px auto;
+}
+
+.timerAbout{
+    /* border: 2px solid black; */
+    /* margin: 100px auto; */
+    padding: 100px 200px;
+    background-color: white;
+    color: #212121;
+}
+
+.timerbox{
+    width: 200px;
+    height: 40px;
+    background-color: green;
+    color: white;
+}
