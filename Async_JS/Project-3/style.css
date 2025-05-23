@@ -1,0 +1,17 @@
+
+table, th, td {
+  border:1px solid white;
+}
+.item{
+    width: 80vw;
+    height: 50vh;
+    border: 2px solid white;
+    margin: 100px auto;
+}
+
+#key_code{
+    width: 40vw;
+    height: 20vh;
+    /* border: 2px solid white; */
+    margin: 100px auto;
+}
