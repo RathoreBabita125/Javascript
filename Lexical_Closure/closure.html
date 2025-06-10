@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body style="background-color: #313131; color: #fff;">
+
+    <button id="orange" type="submit">Orange</button>
+    <button id="green" type="submit">Green</button>
+    
+</body>
+
+<script>
+
+
+    // document.getElementById('orange').addEventListener('click', ()=>{
+    //     document.body.style.backgroundColor='orange'
+    // })
+    // document.getElementById('green').addEventListener('click', ()=>{
+    //     document.body.style.backgroundColor='green'
+    // })
+
+
+    // function clickHandler(color){
+    //     document.body.style.backgroundColor=`${color}`
+    // }
+    // document.getElementById('orange').addEventListener('click',clickHandler('orange'))
+    // document.getElementById('green').addEventListener('click',clickHandler('green'))
+
+
+    function clickHandler(color){
+        function getColor(){
+            document.body.style.backgroundColor=`${color}`
+        }
+        return getColor
+    }
+    document.getElementById('orange').addEventListener('click',clickHandler('orange'))
+    document.getElementById('green').addEventListener('click',clickHandler('green'))
+
+
+</script>
+
+</html>
